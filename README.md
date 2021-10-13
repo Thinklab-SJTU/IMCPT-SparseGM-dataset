@@ -5,11 +5,11 @@ Note that you should install colmap and download Image_Matching_Challange_Data b
     
     python dataset_generator.py
 
-Arguments are the following (All have defaults):
+Arguments are the following:
 
-    --root             'source dataset directory'
-    --out_dir          'output dataset directory'
-    --pt_num           'universal point number to be selected'
-    --min_exist_num    'min num of img an anchor exists in'
-    --dis_rate         'min distance rate when selecting points'
-    --exist_dis_rate   'min distance rate when judging anchors\' existence'
+    --root             'source dataset directory'                             default='/mnt/nas/dataset_share/Image_Matching_Challange_Data'
+    --out_dir          'output dataset directory'                             default='picture'
+    --pt_num           'universal point number to be selected'                default=50
+    --min_exist_num    'min num of img an anchor exists in'                   default=10
+    --dis_rate         'min distance rate when selecting points'              default=1.0
+    --exist_dis_rate   'min distance rate when judging anchors\' existence'   default=0.75
