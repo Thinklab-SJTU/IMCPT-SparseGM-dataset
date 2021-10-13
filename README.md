@@ -1,5 +1,5 @@
 # IMCPT-SparseGM-generator
-This generator creates IMCPT-SparseGM based on createsImage_Matching_Challange_Data.
+This generator creates IMCPT-SparseGM based on Image_Matching_Challange_Data.
 
 Note that you should install colmap and download Image_Matching_Challange_Data before you create IMCPT-SparseGM by just running 
     
