@@ -1,7 +1,12 @@
 # IMCPT-SparseGM-generator
 This generator creates IMCPT-SparseGM based on createsImage_Matching_Challange_Data.
-Note that you should install colmap before you create IMCPT-SparseGM by just running 'python dataset_generator.py'
+
+Note that you should install colmap before you create IMCPT-SparseGM by just running 
+    
+    python dataset_generator.py
+
 Arguments are the following (All have defaults):
+
     --root             'source dataset directory'
     --out_dir          'output dataset directory'
     --pt_num           'universal point number to be selected'
