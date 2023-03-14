@@ -36,7 +36,7 @@ def get_image(idx):
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--root', dest='root', help='source dataset directory',
-                        default='/mnt/nas/dataset_share/Image_Matching_Challange_Data', 
+                        default='Image_Matching_Challange_Data', 
                         type=str)
     parser.add_argument('--out_dir', dest='out_dir', help='output dataset directory',
                         default='picture', 
