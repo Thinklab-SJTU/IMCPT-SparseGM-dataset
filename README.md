@@ -6,13 +6,26 @@ A comparison of existing vision graph matching datasets is presented:
 
 #### Comparison of Existing Vision Graph Matching Datasets
 
-| **dataset name**        | **# images** | **# classes** | **avg # nodes** | **# universe** | **partial rate** | **data type** |
-| ----------------------- | ------------ | ------------- | --------------- | -------------- | ---------------- | ------------- |
-| **CMU house/hotel**     | 212          | 2             | 30              | 30             | 0.0%             | gray-scale    |
-| **Willow ObjectClass**  | 404          | 5             | 10              | 10             | 0.0%             | RGB           |
-| **CUB2011**             | 11788        | 200           | 12.0            | 15             | 20.0%            | RGB           |
-| **Pascal VOC Keypoint** | 8702         | 20            | 9.07            | 6 to 23        | 28.5%            | RGB           |
-| **IMC-PT-SparseGM-50**  | 25061        | 16            | 21.36           | 50             | 57.3%            | RGB           |
+| **dataset name**        | **# images** | **# classes** | **avg # nodes** | **# universe** | **partial rate** | **data type** | best-known f1                                  |
+| ----------------------- | ------------ | ------------- | --------------- | -------------- | ---------------- | ------------- | ---------------------------------------------- |
+| **CMU house/hotel**     | 212          | 2             | 30              | 30             | 0.0%             | gray-scale    | 100% (learning-free, RRWM, ECCV 2012)          |
+| **Willow ObjectClass**  | 404          | 5             | 10              | 10             | 0.0%             | RGB           | 97.8% (unsupervised learning, GANN, PAMI 2023) |
+| **CUB2011**             | 11788        | 200           | 12.0            | 15             | 20.0%            | RGB           | 83.2% (supervised learning, PCA-GM, ICCV 2019) |
+| **Pascal VOC Keypoint** | 8702         | 20            | 9.07            | 6 to 23        | 28.5%            | RGB           | 62.8% (supervised learning, BBGM, ECCV 2020)   |
+| **IMC-PT-SparseGM-50**  | 25765        | 16            | 21.36           | 50             | 57.3%            | RGB           | 72.9% (supervised learning, )                  |
+| **IMC-PT-SparseGM-100** | 25765        | 16            | 44.48           | 100            | 55.5%            | RGB           | 71.5%(supervised learning, )                   |
+
+The classes and number of images in each class are also presented:
+
+#### Number of images in each class
+
+| class name | brandenburg\_gate | grand\_place\_brussels | palace\_of\_westminster | reichstag* | taj\_mahal | westminster\_abbey | buckingham\_palace | hagia\_sophia\_interior | pantheon\_exterior | sacre\_coeur* | temple\_nara\_japan | colosseum\_exterior | notre\_dame\_front\_facade | prague\_old\_town\_square | st\_peters\_square* | trevi\_fountain |
+| ---------- | ----------------- | ---------------------- | ----------------------- | ---------- | ---------- | ------------------ | ------------------ | ----------------------- | ------------------ | ------------- | ------------------- | ------------------- | -------------------------- | ------------------------- | ------------------- | --------------- |
+| # images   | 1363              | 1083                   | 983                     | 75         | 1312       | 1061               | 1676               | 889                     | 1401               | 1179          | 904                 | 2063                | 3765                       | 2316                      | 2504                | 3191            |
+
+\* refers to test class.
+
+
 
 A visualization of 3D point cloud labels provided by **the original IMC-PT (blue)** and our selected anchor points for graph matching in **IMC-PT-SparseGM (red)**:
 
