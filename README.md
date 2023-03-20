@@ -73,7 +73,7 @@ Please cite the following papers if you use IMC-PT-SparseGM dataset:
 @unpublished{WangCVPR23,
   title={Deep Learning of Partial Graph Matching via Differentiable Top-K},
   author={Runzhong Wang*, Ziao Guo*, Shaofei Jiang, Xiaokang Yang, Junchi Yan},
-  booktitle={CVPR},,
+  booktitle={CVPR},
   year={2023}
 }
 ```
