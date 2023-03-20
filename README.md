@@ -1,19 +1,19 @@
 # IMCPT-SparseGM
 
-IMCPT-SparseGM dataset is a new visual graph matching benchmark addressing partial matching and graphs with larger sizes, based on the novel stereo benchmark [Image Matching Challenge PhotoTourism  (IMC-PT)  2020](https://www.cs.ubc.ca/research/image-matching-challenge/2020/). This dataset is released in CVPR 2023 paper *Deep Learning of Partial Graph Matching via Differentiable Top-K*.
+IMCPT-SparseGM dataset is a new visual graph matching benchmark addressing partial matching and graphs with larger sizes, based on the novel stereo benchmark [Image Matching Challenge PhotoTourism  (IMC-PT)  2020](https://www.cs.ubc.ca/research/image-matching-challenge/2020/). This dataset is released in CVPR 2023 paper [*Deep Learning of Partial Graph Matching via Differentiable Top-K*](https://openreview.net/forum?id=4OoXQPGd1s).
 
 A comparison of existing vision graph matching datasets is presented:
 
 #### Comparison of Existing Vision Graph Matching Datasets
 
-| **dataset name**        | **# images** | **# classes** | **avg # nodes** | **# universe** | **partial rate** | **data type** | best-known f1                                  |
-| ----------------------- | ------------ | ------------- | --------------- | -------------- | ---------------- | ------------- | ---------------------------------------------- |
-| **CMU house/hotel**     | 212          | 2             | 30              | 30             | 0.0%             | gray-scale    | 100% (learning-free, RRWM, ECCV 2012)          |
-| **Willow ObjectClass**  | 404          | 5             | 10              | 10             | 0.0%             | RGB           | 97.8% (unsupervised learning, GANN, PAMI 2023) |
-| **CUB2011**             | 11788        | 200           | 12.0            | 15             | 20.0%            | RGB           | 83.2% (supervised learning, PCA-GM, ICCV 2019) |
-| **Pascal VOC Keypoint** | 8702         | 20            | 9.07            | 6 to 23        | 28.5%            | RGB           | 62.8% (supervised learning, BBGM, ECCV 2020)   |
-| **IMC-PT-SparseGM-50**  | 25765        | 16            | 21.36           | 50             | 57.3%            | RGB           | 72.9% (supervised learning, )                  |
-| **IMC-PT-SparseGM-100** | 25765        | 16            | 44.48           | 100            | 55.5%            | RGB           | 71.5%(supervised learning, )                   |
+| **dataset name**        | **# images** | **# classes** | **avg # nodes** | **# universe** | **partial rate** | **data type** | best-known f1                                       |
+| ----------------------- | ------------ | ------------- | --------------- | -------------- | ---------------- | ------------- | --------------------------------------------------- |
+| **CMU house/hotel**     | 212          | 2             | 30              | 30             | 0.0%             | gray-scale    | 100% (learning-free, RRWM, ECCV 2012)               |
+| **Willow ObjectClass**  | 404          | 5             | 10              | 10             | 0.0%             | RGB           | 97.8% (unsupervised learning, GANN, PAMI 2023)      |
+| **CUB2011**             | 11788        | 200           | 12.0            | 15             | 20.0%            | RGB           | 83.2% (supervised learning, PCA-GM, ICCV 2019)      |
+| **Pascal VOC Keypoint** | 8702         | 20            | 9.07            | 6 to 23        | 28.5%            | RGB           | 62.8% (supervised learning, BBGM, ECCV 2020)        |
+| **IMC-PT-SparseGM-50**  | 25765        | 16            | 21.36           | 50             | 57.3%            | RGB           | 72.9% (supervised learning, GCAN-AFAT-I, CVPR 2023) |
+| **IMC-PT-SparseGM-100** | 25765        | 16            | 44.48           | 100            | 55.5%            | RGB           | 71.5%(supervised learning, GCAN-AFAT-U, CVPR 2023)  |
 
 The classes and number of images in each class are also presented:
 
