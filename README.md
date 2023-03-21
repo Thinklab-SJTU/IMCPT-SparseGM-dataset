@@ -6,14 +6,14 @@ A comparison of existing vision graph matching datasets is presented:
 
 #### Comparison of Existing Vision Graph Matching Datasets
 
-| **dataset name**        | **# images** | **# classes** | **avg # nodes** | **# universe** | **partial rate** | **data type** | best-known f1                                       |
-| ----------------------- | ------------ | ------------- | --------------- | -------------- | ---------------- | ------------- | --------------------------------------------------- |
-| **CMU house/hotel**     | 212          | 2             | 30              | 30             | 0.0%             | gray-scale    | 100% (learning-free, RRWM, ECCV 2012)               |
-| **Willow ObjectClass**  | 404          | 5             | 10              | 10             | 0.0%             | RGB           | 97.8% (unsupervised learning, GANN, PAMI 2023)      |
-| **CUB2011**             | 11788        | 200           | 12.0            | 15             | 20.0%            | RGB           | 83.2% (supervised learning, PCA-GM, ICCV 2019)      |
-| **Pascal VOC Keypoint** | 8702         | 20            | 9.07            | 6 to 23        | 28.5%            | RGB           | 62.8% (supervised learning, BBGM, ECCV 2020)        |
-| **IMC-PT-SparseGM-50**  | 25765        | 16            | 21.36           | 50             | 57.3%            | RGB           | 72.9% (supervised learning, GCAN-AFAT-I, CVPR 2023) |
-| **IMC-PT-SparseGM-100** | 25765        | 16            | 44.48           | 100            | 55.5%            | RGB           | 71.5%(supervised learning, GCAN-AFAT-U, CVPR 2023)  |
+| **dataset name**        | **# images** | **# classes** | **avg # nodes** | avg # edges | **# universe** | **partial rate** | best-known f1                                       |
+| ----------------------- | ------------ | ------------- | --------------- | ----------- | -------------- | ---------------- | --------------------------------------------------- |
+| **CMU house/hotel**     | 212          | 2             | 30              | \           | 30             | 0.0%             | 100% (learning-free, RRWM, ECCV 2012)               |
+| **Willow ObjectClass**  | 404          | 5             | 10              | \           | 10             | 0.0%             | 97.8% (unsupervised learning, GANN, PAMI 2023)      |
+| **CUB2011**             | 11788        | 200           | 12.0            | \           | 15             | 20.0%            | 83.2% (supervised learning, PCA-GM, ICCV 2019)      |
+| **Pascal VOC Keypoint** | 8702         | 20            | 9.07            | \           | 6 to 23        | 28.5%            | 62.8% (supervised learning, BBGM, ECCV 2020)        |
+| **IMC-PT-SparseGM-50**  | 25765        | 16            | 21.36           | 54.71       | 50             | 57.3%            | 72.9% (supervised learning, GCAN-AFAT-I, CVPR 2023) |
+| **IMC-PT-SparseGM-100** | 25765        | 16            | 44.48           | 123.99      | 100            | 55.5%            | 71.5%(supervised learning, GCAN-AFAT-U, CVPR 2023)  |
 
 The classes and number of images in each class are also presented:
 
@@ -34,6 +34,12 @@ A visualization of 3D point cloud labels provided by **the original IMC-PT (blue
 A visualization of graph matching labels from **IMC-PT-SparseGM**:
 
 ![reichstag-visual](./dataset_imgs/reichstag-visual.png)
+
+
+
+A visualization of visual graphs in each class from **IMC-PT-SparseGM**:
+
+![visual_graphs](./dataset_imgs/IMCPT_visual.jpg)
 
 
 
