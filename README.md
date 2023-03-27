@@ -59,9 +59,18 @@ Arguments are the following:
     --dis_rate         'min distance rate when selecting points'              default=1.0
     --exist_dis_rate   'min distance rate when judging anchors\' existence'   default=0.75
 
-We provide the download links of IMC-PT-SparseGM-50, i.e., IMC-PT-SparseGM with 50 anchor points from [google drive](https://drive.google.com/file/d/1Po9pRMWXTqKK2ABPpVmkcsOq-6K_2v-B/view?usp=sharing) or [baidu drive (code: 0576)](https://pan.baidu.com/s/1hlJdIFp4rkiz1Y-gztyHIw).
+Then the adjacency matrix can be generated and saved in annotation files by running
 
-You can also generate IMC-PT-SparseGM annotations by your demands (such as setting ``pt_num`` to 100), using IMCPT-SparseGM-generator.
+​    python build_graphs.py
+
+Arguments are the following:
+
+    --anno_path            'dataset annotation directory'                             default='data/IMC-PT-SparseGM/annotations'
+    --stg   'strategy of graph building, tri or near or fc'   default='tri'
+
+We provide the download links of IMC-PT-SparseGM-50 and IMC-PT-SparseGM-100, i.e., IMC-PT-SparseGM with annotations of 50 and 100 anchor points from [google drive](https://drive.google.com/file/d/1Po9pRMWXTqKK2ABPpVmkcsOq-6K_2v-B/view?usp=sharing) or [baidu drive (code: 0576)](https://pan.baidu.com/s/1hlJdIFp4rkiz1Y-gztyHIw).
+
+You can also generate IMC-PT-SparseGM annotations by your demands (such as setting ``pt_num`` to 200), using IMC-PT-SparseGM generator.
 
 
 
